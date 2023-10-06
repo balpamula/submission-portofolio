@@ -1,0 +1,722 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bs-body-font-family: 'Quicksand', sans-serif;
+    --primary: #fe7b2a;
+    --secondary: #4A2708;
+    --bg-color: #FFFCFA;
+    --yellow: #FBBC0B;
+    --bg-color-secondary: #fff7f0;
+}
+
+* {
+    font-family: var(--bs-body-font-family);
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: transparent;
+}
+
+body {
+    color: var(--secondary);
+    background-color: var(--bg-color);
+}
+
+.container {
+    display: flex;
+    width: 1440px;
+    padding: 75px 12px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#about,
+#page-top,
+#service,
+#galery {
+    padding-top: 86px;
+}
+
+#page-top .container img {
+    width: 448px;
+}
+
+section .container img {
+    width: 448px;
+}
+
+header {
+    display: flex;
+    padding: 12px 0px;
+    align-items: center;
+    border-bottom: 2px solid var(--primary);
+    background-color: var(--bg-color);
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+header .container {
+    padding: 0 12px;
+    width: 1440px;
+}
+
+nav.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    font-size: 48px;
+    display: flex;
+    align-items: flex-start;
+    color: var(--primary);
+}
+
+.brand:hover {
+    color: var(--yellow);
+}
+
+.navbar .navbar-menu {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+}
+
+.navbar .navbar-menu .navbar-item {
+    display: flex;
+    padding: 8px 0px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: color 0.15s ease-in-out;
+}
+
+.navbar .navbar-menu .navbar-item:hover {
+    color: var(--yellow);
+}
+
+#menu {
+    display: none;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 48px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.fw-normal {
+    font-weight: 400;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.header {
+    color: #4A2708;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: 2px;
+}
+
+.about {
+    color: #4A2708;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+.button {
+    text-decoration: none;
+    color: var(--bg-color);
+    background-color: var(--primary);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    display: inline-block;
+    padding: 8px 24px;
+    align-items: center;
+    border-radius: 42px;
+    transition: border-color 0.15s ease-in-out, color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+.button-outline {
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    background-color: var(--bg-color);
+}
+
+.button:hover {
+    color: var(--bg-color);
+    background-color: var(--yellow);
+}
+
+.button-outline:hover {
+    color: var(--bg-color);
+    background-color: var(--primary);
+}
+
+i {
+    background-color: transparent;
+}
+
+.articleHead {
+    max-width: 626px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.articleAbout {
+    max-width: 692px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.imgHeader,
+.imgAbout {
+    max-width: 448px;
+}
+
+.petshop,
+.grooming,
+.galeri {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 36px;
+}
+
+.section-title i {
+    color: var(--primary);
+}
+
+.petshop-display,
+.grooming-display {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.galeri-display {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#galery .container.galeri .galeri-display img {
+    width: 300px;
+}
+
+#service .container.petshop .petshop-product img,
+#service .container.grooming .petshop-grooming img {
+    width: 389px;
+}
+
+section .container img {
+    width: 448px;
+}
+
+
+.petshop-product,
+.petshop-grooming {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.petshop-product h3.fw-semibold {
+    color: var(--primary);
+}
+
+.petshop-product img {
+    width: 389px !important;
+}
+
+.footer {
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+.footer span {
+    background-color: var(--secondary);
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+footer {
+    background-color: var(--bg-color-secondary);
+}
+
+.footer-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 8px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer-content .location ul {
+    max-width: 726px;
+}
+
+.location,
+.contact,
+.layanan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+/* Container & Img Responsive */
+@media screen and (max-width: 1440px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    #page-top .container img,
+    section .container img,
+    .imgHeader {
+        width: 392px;
+    }
+
+    section#about .container {
+        gap: 64px;
+    }
+
+
+    #service .container.petshop .petshop-product img,
+    #service .container.grooming .petshop-grooming img {
+        width: 296px !important;
+    }
+
+    #galery .container.galeri .galeri-display img {
+        width: 221px !important;
+    }
+
+    .footer-content .location ul {
+        max-width: 486px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 824px;
+    }
+
+    #page-top .container img,
+    section .container img,
+    .imgHeader {
+        width: 326px;
+    }
+
+    .articleHead {
+        gap: calc(0.82 * 24px);
+    }
+
+    section#about .container {
+        gap: 32px;
+    }
+
+    #service .container.petshop .petshop-product img,
+    #service .container.grooming .petshop-grooming img {
+        width: 236px !important;
+    }
+
+    #galery .container.galeri .galeri-display img {
+        width: 176px !important;
+    }
+
+    .footer-content .location ul {
+        max-width: 426px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 628px;
+    }
+
+    #page-top .container img,
+    section .container img,
+    .imgHeader {
+        width: 252px;
+    }
+
+    .articleHead {
+        gap: calc(0.75 * 24px);
+    }
+
+    section#about .container {
+        gap: 24px;
+    }
+
+    #service .container.petshop .petshop-product img,
+    #service .container.grooming .petshop-grooming img {
+        width: 176px !important;
+    }
+
+    #galery .container.galeri .galeri-display img {
+        width: 138px !important;
+    }
+
+    #page-top .container .articleHead {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #page-top .container,
+    #about .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .articleAbout {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content,
+    .location,
+    .contact,
+    .layanan {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        max-width: 420px;
+    }
+
+    .articleHead {
+        gap: calc(0.64 * 24px);
+    }
+
+    #service .container.petshop .petshop-product img,
+    #service .container.grooming .petshop-grooming img {
+        width: 256px !important;
+    }
+
+    #galery .container.galeri .galeri-display img {
+        width: 256px !important;
+    }
+
+    .petshop-display,
+    .grooming-display {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .galeri-display {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        text-align: center;
+    }
+}
+
+/* Navbar Responsive */
+@media screen and (max-width: 1440px) {
+    header .container {
+        max-width: 1024px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header .container {
+        max-width: 824px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .container {
+        max-width: 628px;
+    }
+
+    #menu {
+        display: inline-block;
+        color: var(--secondary);
+    }
+
+    header .container .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fffcfb;
+        z-index: -1;
+        margin-top: 2px;
+        box-shadow: 0px 2px 12px 0px #dadada;
+        gap: 8px;
+        transition: 0.3s;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header .container {
+        max-width: 420px;
+    }
+}
+
+/* Font Responsive */
+@media screen and (max-width: 1440px) {
+    #page-top .container .header {
+        font-size: calc(0.90 * 64px);
+        line-height: calc(0.90 * 72px);
+        letter-spacing: calc(0.90 * 2px);
+    }
+
+    section .container .about {
+        font-size: calc(0.90 * 24px);
+        letter-spacing: calc(0.90 * 1px);
+    }
+
+    h1,
+    .brand {
+        font-size: calc(0.90 * 48px);
+    }
+
+    h2,
+    .location h2,
+    .contact h2,
+    .layanan h2,
+    .section-title {
+        font-size: calc(0.90 * 36px);
+    }
+
+    .navbar .navbar-menu .navbar-item,
+    .location ul,
+    .contact ul,
+    .layanan ul {
+        font-size: calc(0.90 * 24px);
+    }
+
+    .button {
+        font-size: calc(0.90 * 32px);
+        border-radius: calc(0.90 * 42px);
+    }
+
+    .footer span {
+        font-size: calc(0.90 * 24px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #page-top .container .header {
+        font-size: calc(0.82 * 64px);
+        line-height: calc(0.82 * 72px);
+        letter-spacing: calc(0.82 * 2px);
+    }
+
+    section .container .about {
+        font-size: calc(0.82 * 24px);
+        letter-spacing: calc(0.82 *1px);
+    }
+
+    h1,
+    .brand {
+        font-size: calc(0.82 * 48px);
+    }
+
+    h2,
+    .location h2,
+    .contact h2,
+    .layanan h2,
+    .section-title {
+        font-size: calc(0.82 * 36px);
+    }
+
+    .navbar .navbar-menu .navbar-item,
+    .location ul,
+    .contact ul,
+    .layanan ul {
+        font-size: calc(0.82 * 24px);
+    }
+
+    .button {
+        font-size: calc(0.82 * 32px);
+        border-radius: calc(0.82 * 42px);
+    }
+
+    .footer span {
+        font-size: calc(0.82 * 24px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #page-top .container .header {
+        font-size: calc(0.75 * 64px);
+        line-height: calc(0.75 * 72px);
+        letter-spacing: calc(0.75 * 2px);
+    }
+
+    section .container .about {
+        font-size: calc(0.75 * 24px);
+        letter-spacing: calc(0.75 * 1px);
+    }
+
+    h1,
+    .brand {
+        font-size: calc(0.75 * 48px);
+    }
+
+    h2,
+    .location h2,
+    .contact h2,
+    .layanan h2,
+    .section-title {
+        font-size: calc(0.75 * 36px);
+    }
+
+    .navbar .navbar-menu .navbar-item,
+    .location ul,
+    .contact ul,
+    .layanan ul {
+        font-size: calc(0.75 * 24px);
+    }
+
+    .button {
+        font-size: calc(0.75 * 32px);
+        border-radius: calc(0.75 * 42px);
+    }
+
+    .footer span {
+        font-size: calc(0.75 * 24px);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #page-top .container .header {
+        font-size: calc(0.64 * 64px);
+        line-height: calc(0.64 * 72px);
+        letter-spacing: calc(0.64 * 2px);
+    }
+
+    section .container .about {
+        font-size: calc(0.64 * 24px);
+        letter-spacing: calc(0.64 * 1px);
+    }
+
+    h1,
+    .brand {
+        font-size: calc(0.64 * 48px);
+    }
+
+    h2,
+    .location h2,
+    .contact h2,
+    .layanan h2,
+    .section-title {
+        font-size: calc(0.64 * 36px);
+    }
+
+    .navbar .navbar-menu .navbar-item,
+    .location ul,
+    .contact ul,
+    .layanan ul {
+        font-size: calc(0.64 * 24px);
+    }
+
+    .button {
+        font-size: calc(0.64 * 32px);
+        border-radius: calc(0.64 * 42px);
+    }
+
+    .footer span {
+        font-size: calc(0.64 * 24px);
+    }
+}
