@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900');
 
 :root {
-    --bs-body-font-family: 'Quicksand', sans-serif;
+    --bs-body-font-family: 'Gabarito', cursive;
     --primary: #fe7b2a;
-    --secondary: #4A2708;
-    --bg-color: #FFFCFA;
+    --secondary: #15295F;
+    --bg-color: #FFFFFF;
     --yellow: #FBBC0B;
     --bg-color-secondary: #fff7f0;
 }
@@ -28,7 +28,7 @@ body {
 .container {
     display: flex;
     width: 1440px;
-    padding: 75px 12px;
+    padding: 112px 12px;
     margin-right: auto;
     margin-left: auto;
     justify-content: space-between;
@@ -145,21 +145,21 @@ h3 {
 }
 
 .header {
-    color: #4A2708;
-    font-size: 64px;
+    color: #15295F;
+    font-size: 54px;
     font-style: normal;
     font-weight: 500;
     line-height: 72px;
-    letter-spacing: 2px;
 }
 
 .about {
-    color: #4A2708;
+    color: #15295F;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .button {
@@ -207,13 +207,11 @@ i {
 }
 
 .articleAbout {
-    max-width: 692px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 8px;
-    align-self: stretch;
 }
 
 .imgHeader,
@@ -289,7 +287,6 @@ section .container img {
 }
 
 .footer {
-    background-color: var(--secondary);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,8 +294,7 @@ section .container img {
 }
 
 .footer span {
-    background-color: var(--secondary);
-    color: #FFF;
+    color: var(--secondary);
     text-align: center;
     font-size: 24px;
     font-style: normal;
@@ -312,34 +308,6 @@ section .container img {
     justify-content: space-between;
     align-items: flex-start;
     gap: 32px;
-}
-
-footer {
-    background-color: var(--bg-color-secondary);
-}
-
-.footer-content ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    gap: 8px;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.footer-content .location ul {
-    max-width: 726px;
-}
-
-.location,
-.contact,
-.layanan {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
 }
 
 /* Container & Img Responsive */
