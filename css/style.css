@@ -220,7 +220,7 @@ i {
 }
 
 .project,
-.grooming,
+.contact,
 .galeri {
     display: flex;
     flex-direction: column;
@@ -241,10 +241,10 @@ i {
 }
 
 .project-display,
-.grooming-display {
+.contact-display {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 32px;
@@ -262,7 +262,7 @@ i {
 }
 
 #projects .container.project .project-product img,
-#projects .container.grooming .project-grooming img {
+#projects .container.contact .project-contact img {
     width: 389px;
 }
 
@@ -272,7 +272,7 @@ i {
 
 
 .project-product,
-.project-grooming {
+.project-contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -386,7 +386,7 @@ i {
     }
 
     .project-display,
-    .grooming-display {
+    .contact-display {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -443,7 +443,7 @@ i {
     }
 
     .project-display,
-    .grooming-display {
+    .contact-display {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -733,4 +733,8 @@ i {
     .card {
         width: 100%;
     }
+}
+
+a {
+    color: var(--secondary);
 }
