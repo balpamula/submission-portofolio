@@ -37,18 +37,18 @@ body {
 
 #about,
 #page-top,
-#service,
-#galery {
-    padding-top: 86px;
+#projects,
+#contact {
+    padding: 83px 0;
 }
 
 #page-top .container img {
-    width: 448px;
+    width: 550px;
 }
 
-section .container img {
-    width: 448px;
-}
+/* section .container img {
+    width: 550px;
+} */
 
 header {
     display: flex;
@@ -216,10 +216,10 @@ i {
 
 .imgHeader,
 .imgAbout {
-    max-width: 448px;
+    max-width: 550px;
 }
 
-.petshop,
+.project,
 .grooming,
 .galeri {
     display: flex;
@@ -240,12 +240,14 @@ i {
     color: var(--primary);
 }
 
-.petshop-display,
+.project-display,
 .grooming-display {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
 }
 
 .galeri-display {
@@ -259,18 +261,18 @@ i {
     width: 300px;
 }
 
-#service .container.petshop .petshop-product img,
-#service .container.grooming .petshop-grooming img {
+#projects .container.project .project-product img,
+#projects .container.grooming .project-grooming img {
     width: 389px;
 }
 
-section .container img {
-    width: 448px;
-}
+/* section .container img {
+    width: 550px;
+} */
 
 
-.petshop-product,
-.petshop-grooming {
+.project-product,
+.project-grooming {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -278,11 +280,11 @@ section .container img {
     gap: 12px;
 }
 
-.petshop-product h3.fw-semibold {
+.project-product h3.fw-semibold {
     color: var(--primary);
 }
 
-.petshop-product img {
+.project-product img {
     width: 389px !important;
 }
 
@@ -317,19 +319,12 @@ section .container img {
     }
 
     #page-top .container img,
-    section .container img,
     .imgHeader {
         width: 392px;
     }
 
     section#about .container {
         gap: 64px;
-    }
-
-
-    #service .container.petshop .petshop-product img,
-    #service .container.grooming .petshop-grooming img {
-        width: 296px !important;
     }
 
     #galery .container.galeri .galeri-display img {
@@ -347,7 +342,6 @@ section .container img {
     }
 
     #page-top .container img,
-    section .container img,
     .imgHeader {
         width: 326px;
     }
@@ -358,11 +352,6 @@ section .container img {
 
     section#about .container {
         gap: 32px;
-    }
-
-    #service .container.petshop .petshop-product img,
-    #service .container.grooming .petshop-grooming img {
-        width: 236px !important;
     }
 
     #galery .container.galeri .galeri-display img {
@@ -380,7 +369,6 @@ section .container img {
     }
 
     #page-top .container img,
-    section .container img,
     .imgHeader {
         width: 252px;
     }
@@ -393,13 +381,18 @@ section .container img {
         gap: 24px;
     }
 
-    #service .container.petshop .petshop-product img,
-    #service .container.grooming .petshop-grooming img {
-        width: 176px !important;
-    }
-
     #galery .container.galeri .galeri-display img {
         width: 138px !important;
+    }
+
+    .project-display,
+    .grooming-display {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        text-align: center;
     }
 
     #page-top .container .articleHead {
@@ -446,16 +439,11 @@ section .container img {
         gap: calc(0.64 * 24px);
     }
 
-    #service .container.petshop .petshop-product img,
-    #service .container.grooming .petshop-grooming img {
-        width: 256px !important;
-    }
-
     #galery .container.galeri .galeri-display img {
         width: 256px !important;
     }
 
-    .petshop-display,
+    .project-display,
     .grooming-display {
         display: flex;
         flex-wrap: wrap;
@@ -687,4 +675,52 @@ section .container img {
     .footer span {
         font-size: calc(0.64 * 24px);
     }
+}
+
+.card {
+    width: 598px;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+
+    border-radius: 32px;
+    background: #FFF;
+    box-shadow: 0px 0px 16px 0px #FFD8C0;
+}
+
+.card img {
+    object-fit: cover;
+    border: 2px solid;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+}
+
+.card-title {
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-body {
+    flex: 1 0 0;
+    align-self: stretch;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
