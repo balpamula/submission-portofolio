@@ -211,7 +211,7 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 32px;
 }
 
 .imgHeader,
@@ -392,7 +392,6 @@ i {
         align-items: center;
         justify-content: center;
         gap: 32px;
-        text-align: center;
     }
 
     #page-top .container .articleHead {
@@ -450,7 +449,6 @@ i {
         align-items: center;
         justify-content: center;
         gap: 32px;
-        text-align: center;
     }
 
     .galeri-display {
@@ -678,7 +676,7 @@ i {
 }
 
 .card {
-    width: 598px;
+    width: 692px;
     display: flex;
     padding: 24px;
     flex-direction: column;
@@ -692,8 +690,8 @@ i {
 }
 
 .card img {
-    object-fit: cover;
-    border: 2px solid;
+    max-width: 100%;
+    border-radius: 8px;
 }
 
 .card-content {
@@ -723,4 +721,16 @@ i {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+@media screen and (max-width: 1440px) {
+    .card {
+        width: 484px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 100%;
+    }
 }
